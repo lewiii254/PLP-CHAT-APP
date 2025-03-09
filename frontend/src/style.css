@@ -1,0 +1,104 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+/* Chat Box - Increased Size */
+.chat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 600px;  /* Increased width */
+  height: 80vh;  /* Increased height */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+/* Message List - Bigger and Scrollable */
+.message-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-height: 60vh;
+}
+
+/* Individual Message */
+.message {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0;
+}
+
+.message.self {
+  justify-content: flex-end;
+}
+
+.message p {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 70%;
+  text-align: left;
+}
+
+.message.self p {
+  background: #28a745;
+}
+
+/* Message Input */
+.message-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.message-input button {
+  padding: 12px 15px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.message-input button:hover {
+  background: #218838;
+}
